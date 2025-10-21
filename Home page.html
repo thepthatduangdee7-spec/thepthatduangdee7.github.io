@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title style="color: black;" >Computer Engineer Vocabulary — Home (CPE1−CPE5)</title>
+  <style> 
+    /* style.css — Soft Gray Theme for Vocabulary */
+
+@media (max-width: 600px)
+ {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+:root{
+  --bg:#f4f6f8;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#8b95a5;
+  --accent-2:#5b6570;
+  --border:#e6e9ee;
+  --highlight:#ffe58a;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #ffffff);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+}
+
+.wrap{max-width:1100px;margin:0 auto;padding:18px}
+
+/* header */
+.site-header{
+  background: linear-gradient(90deg,#01010a,#eef2f6);
+  border-bottom:1px solid var(--border);
+  padding:22px 0;
+}
+.site-header h1{margin:0;font-size:1.6rem;color:var(--accent-2)}
+.site-header .lead{margin:6px 0 0;color:var(--muted)}
+
+/* search */
+.search-wrap{display:flex;gap:10px;align-items:center;justify-content:center;margin:18px 0}
+.search-input{
+  width:66%;
+  padding:12px 14px;border-radius:10px;border:1px solid var(--border);
+  background:linear-gradient(180deg,#fff,#fbfdff);
+  box-shadow:0 2px 6px rgba(16,24,40,0.03);
+  font-size:15px;
+}
+.btn{
+  padding:10px 14px;border-radius:10px;border:1px solid var(--border);
+  background: #f8fafb;color:var(--accent-2);cursor:pointer;font-weight:600;
+  box-shadow:0 2px 6px rgba(16,24,40,0.03);
+}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;border:1px solid #ddd;color:var(--muted)}
+
+/* main grid */
+.main-grid{display:grid;grid-template-columns:1fr;gap:18px;padding-bottom:40px}
+
+/* card */
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:14px;
+  box-shadow:0 8px 20px rgba(15,23,42,0.06);
+  border:1px solid var(--border);
+  transition:box-shadow .18s,transform .12s;
+}
+.card h2{margin:0 0 8px 0;color:var(--accent-2);font-size:1.05rem}
+
+/* table container - horizontal scroll */
+.table-scroll{
+  overflow-x:auto;
+  border-radius:8px;
+  padding:6px;
+  background:linear-gradient(180deg,#fff,#fbfdff);
+  border:1px solid #f0f3f7;
+}
+
+/* table */
+table{
+  border-collapse:collapse;
+  width:100%;
+  min-width:720px;
+  font-size:14px;
+}
+thead th{
+  text-align:center;padding:10px 12px;background:#c0c0c0;color:var(--accent-2);
+  font-weight:700;border-bottom:1px solid var(--border);
+}
+tbody td{
+  padding:10px 12px;border-bottom:1px dashed #eee;text-align:left;
+}
+tbody tr:hover{background:#414141}
+tbody td:first-child{text-align:center;font-weight:600;color:var(--muted);width:80px}
+
+/* highlight */
+.highlight{
+  background:var(--highlight);
+  padding:2px 4px;border-radius:4px;font-weight:600;
+  box-shadow:0 1px 0 rgba(0,0,0,0.03);
+}
+
+/* pulse animation (card flash when found) */
+.pulse{box-shadow:0 12px 30px rgba(16,24,40,0.08);transform:translateY(-4px)}
+
+/* footer */
+.site-footer{padding:18px;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--border);background:transparent;margin-top:18px}
+
+/* responsive */
+@media (max-width:880px){
+  .search-input{width:100%}
+  .wrap{padding:12px}
+  table{min-width:640px}
+}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Computer Engineer Vocabulary Dictionary</h1>
+      <p class="lead">รวมคำศัพท์ CPE1–CPE5 แสดงแยกเป็นการ์ดตาราง</p>
+    </div>
+  </header>
+
+  <div class="wrap search-wrap">
+    <input id="q" class="search-input" placeholder="ค้นหาคำศัพท์ (พิมพ์อังกฤษหรือไทย แล้วกด Enter หรือคลิก ค้นหา)" />
+    <button id="btnSearch" class="btn">ค้นหา</button>
+    <button id="btnClear" class="btn ghost">ล้าง</button>
+  </div>
+
+  <main class="wrap main-grid">
+    <!-- CPE1 -->
+    <section class="card" id="cpe1">
+      <h2>CPE1</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>หมวด</th><th>English</th><th>คำแปล (ไทย)</th></tr></thead>
+          <tbody>
+            <!-- คำศัพท์จาก หมวด1 — เรียง A–Z -->
+            <tr><td>CPE1</td><td id="access">Access</td><td>เข้าถึง</td></tr>
+            <tr><td>CPE1</td><td id="allow">Allow</td><td>อนุญาต</td></tr>
+            <tr><td>CPE1</td><td id="consider">Consider</td><td>พิจารณา</td></tr>
+            <tr><td>CPE1</td><td id="emphasis">Emphasis</td><td>การเน้น, ความสำคัญ</td></tr>
+            <tr><td>CPE1</td><td id="interpret">Interpret</td><td>แปล</td></tr>
+            <tr><td>CPE1</td><td id="interrupt">Interrupt</td><td>ขัดจังหวะ</td></tr>
+            <tr><td>CPE1</td><td id="physical">Physical</td><td>กายภาพ</td></tr>
+            <tr><td>CPE1</td><td id="priority">Priority</td><td>ลำดับความสำคัญ</td></tr>
+            <tr><td>CPE1</td><td id="provide">Provide</td><td>จัดหาให้, ให้</td></tr>
+            <tr><td>CPE1</td><td id="recover">Recover</td><td>กู้คืน, ฟื้นคืน</td></tr>
+            <tr><td>CPE1</td><td id="request">Request</td><td>ร้องขอ</td></tr>
+            <tr><td>CPE1</td><td id="resource">Resource</td><td>ทรัพยากร</td></tr>
+            <tr><td>CPE1</td><td id="separate">Separate</td><td>แยก</td></tr>
+            <tr><td>CPE1</td><td id="significant">Significant</td><td>สำคัญ</td></tr>
+            <tr><td>CPE1</td><td id="thread">Thread</td><td>กระบวนการย่อยของ CPU (เธรด)</td></tr>
+            <tr><td>CPE1</td><td id="through">Through</td><td>ตลอด, ผ่าน</td></tr>
+            <tr><td>CPE1</td><td id="value">Value</td><td>ค่า</td></tr>
+            <tr><td>CPE1</td><td id="variable">Variable</td><td>ตัวแปร</td></tr>
+            <tr><td>CPE1</td><td id="validation">Validation</td><td>ตรวจสอบให้ถูกต้อง</td></tr>
+            <tr><td>CPE1</td><td id="verification">Verification</td><td>การทวนสอบว่าถูกต้อง</td></tr>
+            <tr><td>CPE1</td><td id="visual">Visual</td><td>ที่มองเห็นได้</td></tr>
+            <tr><td>CPE1</td><td id="vistual">Vistual</td><td>เสมือน (สะกดผิดในต้นฉบับ)</td></tr>
+            <tr><td>CPE1</td><td id="several">Several</td><td>จำนวนมาก</td></tr>
+            <tr><td>CPE1</td><td id="protect">Protect</td><td>ปกป้อง</td></tr>
+            <tr><td>CPE1</td><td id="prevent">Prevent</td><td>ยับยั้งปัญหา</td></tr>
+            <tr><td>CPE1</td><td id="allow2" style="display:none">Allow2</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CPE2 -->
+    <section class="card" id="cpe2">
+      <h2>CPE2</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>หมวด</th><th>English</th><th>คำแปล (ไทย)</th></tr></thead>
+          <tbody>
+            <!-- คำศัพท์จาก หมวด2 — เรียง A–Z -->
+            <tr><td>CPE2</td><td id="allocate">Allocate</td><td>จอง</td></tr>
+            <tr><td>CPE2</td><td id="amount">Amount</td><td>จำนวน</td></tr>
+            <tr><td>CPE2</td><td id="among">Among</td><td>ท่ามกลาง, ในบรรดา</td></tr>
+            <tr><td>CPE2</td><td id="approach">Approach</td><td>วิธีการ, เข้าถึง</td></tr>
+            <tr><td>CPE2</td><td id="associate">Associate</td><td>สัมพันธ์กัน</td></tr>
+            <tr><td>CPE2</td><td id="buffer">Buffer</td><td>ตัวกลางที่พักข้อมูล</td></tr>
+            <tr><td>CPE2</td><td id="compile">Compile</td><td>รวบรวม, แปล</td></tr>
+            <tr><td>CPE2</td><td id="contain">Contain</td><td>บรรจุ</td></tr>
+            <tr><td>CPE2</td><td id="describe">Describe</td><td>บรรยาย</td></tr>
+            <tr><td>CPE2</td><td id="discuss">Discuss</td><td>อภิปราย</td></tr>
+            <tr><td>CPE2</td><td id="distribute">Distribute</td><td>แจกจ่าย</td></tr>
+            <tr><td>CPE2</td><td id="entry">Entry</td><td>ต้องการ</td></tr>
+            <tr><td>CPE2</td><td id="explain">Explain</td><td>อธิบาย</td></tr>
+            <tr><td>CPE2</td><td id="express">Express</td><td>ด่วน, แสดงออก</td></tr>
+            <tr><td>CPE2</td><td id="failure">Failure</td><td>ล้มเหลว</td></tr>
+            <tr><td>CPE2</td><td id="implementation">Implementation</td><td>การทำให้เกิดผล</td></tr>
+            <tr><td>CPE2</td><td id="instance">Instance</td><td>ตัวอย่าง</td></tr>
+            <tr><td>CPE2</td><td id="mechanism">Mechanism</td><td>กลไก</td></tr>
+            <tr><td>CPE2</td><td id="queue">Queue</td><td>แถวเรียง, คิว</td></tr>
+            <tr><td>CPE2</td><td id="rather">Rather</td><td>ค่อนข้าง</td></tr>
+            <tr><td>CPE2</td><td id="reference">Reference</td><td>อ้างอิง</td></tr>
+            <tr><td>CPE2</td><td id="result">Result</td><td>ผลลัพธ์</td></tr>
+            <tr><td>CPE2</td><td id="scheme">Scheme</td><td>กรอบ, รูปแบบงาน</td></tr>
+            <tr><td>CPE2</td><td id="various">Various</td><td>หลายหลาย</td></tr>
+            <tr><td>CPE2</td><td id="without">Without</td><td>ปราศจาก</td></tr>
+            <tr><td>CPE2</td><td id="compile2" style="display:none">compile2</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CPE3 -->
+    <section class="card" id="cpe3">
+      <h2>CPE3</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>หมวด</th><th>English</th><th>คำแปล (ไทย)</th></tr></thead>
+          <tbody>
+            <!-- คำศัพท์จาก หมวด3 — เรียง A–Z -->
+            <tr><td>CPE3</td><td id="career">Career</td><td>อาชีพ</td></tr>
+            <tr><td>CPE3</td><td id="carry">Carry</td><td>ขน, ถือ, แบก, พก</td></tr>
+            <tr><td>CPE3</td><td id="content">Content</td><td>เนื้อหา, สารบัญ</td></tr>
+            <tr><td>CPE3</td><td id="context">Context</td><td>บริบท</td></tr>
+            <tr><td>CPE3</td><td id="critical">Critical</td><td>วิกฤต</td></tr>
+            <tr><td>CPE3</td><td id="determine">Determine</td><td>ค้นหาผลลัพธ์, ตัดสินใจ</td></tr>
+            <tr><td>CPE3</td><td id="domain">Domain</td><td>ขอบเขตความรู้หรือความสนใจ</td></tr>
+            <tr><td>CPE3</td><td id="entity">Entity</td><td>สิ่งที่มีอยู่จริง</td></tr>
+            <tr><td>CPE3</td><td id="execution">Execution</td><td>การปฏิบัติ</td></tr>
+            <tr><td>CPE3</td><td id="frame">Frame</td><td>โครง, กรอบ</td></tr>
+            <tr><td>CPE3</td><td id="flame">Flame</td><td>ไฟ</td></tr>
+            <tr><td>CPE3</td><td id="generic">Generic</td><td>โดยทั่วไป, ไม่มีอะไรโดดเด่น</td></tr>
+            <tr><td>CPE3</td><td id="general">General</td><td>ทั่วไป, ไม่เจาะจง</td></tr>
+            <tr><td>CPE3</td><td id="handle3">Handle</td><td>จัดการปัญหา</td></tr>
+            <tr><td>CPE3</td><td id="instruction">Instruction</td><td>คำสั่ง, คำแนะนำ</td></tr>
+            <tr><td>CPE3</td><td id="layer">Layer</td><td>ชั้น</td></tr>
+            <tr><td>CPE3</td><td id="module">Module</td><td>ส่วนงานจำเพาะ</td></tr>
+            <tr><td>CPE3</td><td id="necessary">Necessary</td><td>จำเป็น</td></tr>
+            <tr><td>CPE3</td><td id="particular3">Particular</td><td>โดยเฉพาะ</td></tr>
+            <tr><td>CPE3</td><td id="perform">Perform</td><td>กระทำ</td></tr>
+            <tr><td>CPE3</td><td id="protocol">Protocol</td><td>รูปแบบกฎเกณฑ์ที่ใช้ร่วมกัน</td></tr>
+            <tr><td>CPE3</td><td id="schedule">Schedule</td><td>จัดกำหนดการเวลา</td></tr>
+            <tr><td>CPE3</td><td id="solution">Solution</td><td>วิธีการแก้ปัญหา</td></tr>
+            <tr><td>CPE3</td><td id="source">Source</td><td>ที่มา, แหล่งจ่าย</td></tr>
+            <tr><td>CPE3</td><td id="transfer">Transfer</td><td>โอนถ่าย</td></tr>
+            <tr><td>CPE3</td><td id="topology">Topology</td><td>รูปแบบการเชื่อมต่อเครือข่าย</td></tr>
+            <tr><td>CPE3</td><td id="during">During</td><td>ระหว่าง</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CPE4 -->
+    <section class="card" id="cpe4">
+      <h2>CPE4</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>หมวด</th><th>English</th><th>คำแปล (ไทย)</th></tr></thead>
+          <tbody>
+            <!-- คำศัพท์จาก หมวด4 — เรียง A–Z -->
+            <tr><td>CPE4</td><td id="algorithm">Algorithm</td><td>ขั้นตอนการทำงานโปรแกรม</td></tr>
+            <tr><td>CPE4</td><td id="alternate">Alternate</td><td>สลับ</td></tr>
+            <tr><td>CPE4</td><td id="component">Component</td><td>ส่วนประกอบ</td></tr>
+            <tr><td>CPE4</td><td id="distinguish">Distinguish</td><td>จำแนกความแตกต่าง</td></tr>
+            <tr><td>CPE4</td><td id="ensure">Ensure</td><td>ทำให้แน่ใจ</td></tr>
+            <tr><td>CPE4</td><td id="feature">Feature</td><td>ลักษณะเด่น</td></tr>
+            <tr><td>CPE4</td><td id="forbid">Forbid</td><td>ห้าม</td></tr>
+            <tr><td>CPE4</td><td id="include">Include</td><td>รวม</td></tr>
+            <tr><td>CPE4</td><td id="implication">Implication</td><td>ความหมายโดยใน</td></tr>
+            <tr><td>CPE4</td><td id="involve">Involve</td><td>เกี่ยวข้อง</td></tr>
+            <tr><td>CPE4</td><td id="join">Join</td><td>เข้าร่วม</td></tr>
+            <tr><td>CPE4</td><td id="joint">Joint</td><td>ข้อต่อ, รอยต่อ</td></tr>
+            <tr><td>CPE4</td><td id="modify">Modify</td><td>ปรับเปลี่ยน, แก้ไข</td></tr>
+            <tr><td>CPE4</td><td id="policy">Policy</td><td>นโยบาย</td></tr>
+            <tr><td>CPE4</td><td id="procedure">Procedure</td><td>กระบวนงาน, กระบวนคำสั่ง</td></tr>
+            <tr><td>CPE4</td><td id="scale">Scale</td><td>มาตร, ระดับ, ชั้น</td></tr>
+            <tr><td>CPE4</td><td id="segment">Segment</td><td>ส่วน, แยกเป็นส่วนๆ</td></tr>
+            <tr><td>CPE4</td><td id="signal">Signal</td><td>สัญญาณ</td></tr>
+            <tr><td>CPE4</td><td id="signature">Signature</td><td>ลายเซ็น</td></tr>
+            <tr><td>CPE4</td><td id="success">Success</td><td>สำเร็จ</td></tr>
+            <tr><td>CPE4</td><td id="synchronize">Synchronization</td><td>การเข้าจังหวะ</td></tr>
+            <tr><td>CPE4</td><td id="typical">Typical</td><td>ทั่วไป, มาตรฐาน</td></tr>
+            <tr><td>CPE4</td><td id="usual">Usual</td><td>ปกติ</td></tr>
+            <tr><td>CPE4</td><td id="restrict">Restrict</td><td>จำกัด, ควบคุม</td></tr>
+            <tr><td>CPE4</td><td id="certificate">Certificate</td><td>ประกาศนียบัตร</td></tr>
+            <tr><td>CPE4</td><td id="graduate">Graduate</td><td>สำเร็จการศึกษา</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CPE5 -->
+    <section class="card" id="cpe5">
+      <h2>CPE5</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>หมวด</th><th>English</th><th>คำแปล (ไทย)</th></tr></thead>
+          <tbody>
+            <!-- คำศัพท์จาก หมวด5 — เรียง A–Z -->
+            <tr><td>CPE5</td><td id="advantage">Advantage</td><td>ข้อดี</td></tr>
+            <tr><td>CPE5</td><td id="adjust">Adjust</td><td>ปรับแต่ง</td></tr>
+            <tr><td>CPE5</td><td id="claim">Claim</td><td>เรียกร้องหรืออ้างสิทธิ์</td></tr>
+            <tr><td>CPE5</td><td id="contact">Contact</td><td>สัมผัส, ติดต่อ</td></tr>
+            <tr><td>CPE5</td><td id="contract">Contract</td><td>ทำสัญญา, ข้อตกลง</td></tr>
+            <tr><td>CPE5</td><td id="deny">Deny</td><td>ปฏิเสธ</td></tr>
+            <tr><td>CPE5</td><td id="detect">Detect</td><td>ตรวจจับ</td></tr>
+            <tr><td>CPE5</td><td id="encode">Encode</td><td>เข้ารหัส</td></tr>
+            <tr><td>CPE5</td><td id="encrypt">Encrypt</td><td>เข้ารหัสลับ</td></tr>
+            <tr><td>CPE5</td><td id="exist">Exist</td><td>ดำรงอยู่, มีอยู่</td></tr>
+            <tr><td>CPE5</td><td id="expand">Expand</td><td>ขยายตัวออก</td></tr>
+            <tr><td>CPE5</td><td id="extend">Extend</td><td>ต่อ, ยืดออกไป</td></tr>
+            <tr><td>CPE5</td><td id="handle5">Handle</td><td>ดูแล, จัดการ</td></tr>
+            <tr><td>CPE5</td><td id="improve">Improve</td><td>ปรับปรุง</td></tr>
+            <tr><td>CPE5</td><td id="increase">Increase</td><td>เพิ่ม</td></tr>
+            <tr><td>CPE5</td><td id="isolate">Isolate</td><td>แยกออกมาอยู่โดดเดี่ยว</td></tr>
+            <tr><td>CPE5</td><td id="mirror">Mirror</td><td>กระจก</td></tr>
+            <tr><td>CPE5</td><td id="partial">Partial</td><td>บางส่วน</td></tr>
+            <tr><td>CPE5</td><td id="particular5">Particular</td><td>โดยเฉพาะ</td></tr>
+            <tr><td>CPE5</td><td id="proceed">Proceed</td><td>ดำเนินการ</td></tr>
+            <tr><td>CPE5</td><td id="process">Process</td><td>ประมวลผล</td></tr>
+            <tr><td>CPE5</td><td id="review">Review</td><td>ทบทวน, วิจารณ์</td></tr>
+            <tr><td>CPE5</td><td id="session">Session</td><td>ช่วงเวลาการประชุม</td></tr>
+            <tr><td>CPE5</td><td id="staff">Staff</td><td>คณะผู้ทำงาน, พนักงาน</td></tr>
+            <tr><td>CPE5</td><td id="stuff">Stuff</td><td>สิ่งของ</td></tr>
+            <tr><td>CPE5</td><td id="token">Token</td><td>สัญลักษณ์/สิ่งแทน</td></tr>
+            <tr><td>CPE5</td><td id="unite">Unite</td><td>รวมตัวกัน</td></tr>
+            <tr><td>CPE5</td><td id="extent">Extent</td><td>ปริมาณ, ขนาด, ขอบเขต</td></tr>
+            <tr><td>CPE5</td><td id="deny2" style="display:none">deny2</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">ไฟล์รวบรวมคำศัพท์จากหมวดต่าง ๆ — แก้ไขเพิ่มเติมได้จากไฟล์ HTML นี้</div>
+  </footer>
+
+<script>
+/* ========== Search / highlight / scroll ========== */
+const qEl = document.getElementById('q');
+const btnSearch = document.getElementById('btnSearch');
+const btnClear = document.getElementById('btnClear');
+
+function normalize(s){ return (s||'').toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); }
+
+function clearHighlights(){
+  document.querySelectorAll('.highlight').forEach(span=>{
+    span.replaceWith(document.createTextNode(span.textContent));
+  });
+}
+
+function findAndHighlight(query){
+  clearHighlights();
+  if(!query) return false;
+  const q = normalize(query);
+  const cells = Array.from(document.querySelectorAll('table td'));
+  let first = null;
+  cells.forEach(td=>{
+    if(normalize(td.textContent).includes(q)){
+      // wrap matches in span
+      const re = new RegExp(query.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'), 'ig');
+      td.innerHTML = td.textContent.replace(re, match => `<span class="highlight">${match}</span>`);
+      if(!first) first = td;
+    }
+  });
+  if(first){
+    first.scrollIntoView({behavior:'smooth', block:'center'});
+    // also flash the card header
+    const card = first.closest('.card');
+    if(card){
+      card.classList.add('pulse');
+      setTimeout(()=>card.classList.remove('pulse'),900);
+    }
+    return true;
+  }
+  return false;
+}
+
+btnSearch.addEventListener('click', ()=>{
+  const q = qEl.value.trim();
+  if(!q) return;
+  const found = findAndHighlight(q);
+  if(!found) alert('ไม่พบคำศัพท์ที่ค้นหา: '+q);
+});
+
+qEl.addEventListener('keydown', (e)=>{
+  if(e.key === 'Enter'){ btnSearch.click(); }
+});
+
+btnClear.addEventListener('click', ()=>{
+  qEl.value='';
+  clearHighlights();
+});
+
+/* optional: click on a table row to focus & copy word */
+document.querySelectorAll('table tbody tr').forEach(tr=>{
+  tr.addEventListener('click', ()=>{
+    const word = tr.querySelectorAll('td')[1]?.textContent || '';
+    if(word){
+      // scroll this row into center and highlight briefly
+      tr.scrollIntoView({behavior:'smooth', block:'center'});
+      clearHighlights();
+      const cell = tr.querySelectorAll('td')[1];
+      cell.innerHTML = `<span class="highlight">${cell.textContent}</span>`;
+      setTimeout(()=>clearHighlights(),1200);
+    }
+  });
+});
+</script>
+</body>
+</html>
